@@ -22,19 +22,19 @@ export class AboutUs {
 
     this.items = 
     [
-      {title:"G from GJ", note: "More about G", icon:'football'},
-      {title:"J from GJ", note: "More about J", icon:'beer'}
+      {title:"", note: "More about G", icon:'football'},
+      {title:"", note: "More about J", icon:'beer'}
     ];
 
   }
 
   itemTapped(event, item) {
-    if (item.title=="G from GJ") {
+    if (item.note=="More about G") {
       this.navCtrl.push(Ginfo
     );
       this.playAudio("assets/G.mp3")
     }
-    if (item.title == "J from GJ") {
+    if (item.note == "More about J") {
       this.navCtrl.push(Jinfo
     );
     this.playAudio("assets/J.mp3")

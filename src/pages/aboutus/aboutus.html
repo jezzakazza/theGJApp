@@ -14,7 +14,10 @@
       musical comfort zones. When distance made making live music difficult, GJ really showed their adaptive abilities
       and transformed into an electronic powerhouse!</p>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)" style = "background-color: #F1AA7F">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
+      <ion-icon item-left>
+        <img *ngIf="item.note=='More about G'" src="assets/gInfo.png" style="height:2pc" >
+        <img *ngIf="item.note=='More about J'" src="assets/jInfo.png" style="height:2pc" >
+      </ion-icon>
       {{item.title}}
       <div class="item-note" item-right>
         {{item.note}}
