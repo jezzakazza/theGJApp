@@ -13,13 +13,17 @@ export class Albums {
     
   }
 
-  private playAudio(audioSrc: string)
-  {
-    var audio = new Audio
-    audio.src = audioSrc;
-    audio.load();
-    audio.pause();
-    audio.play();
+itemTapped(event, item: string) {
+    if (item =="groupStudyArea") {
+      this.navCtrl.push(Albums
+    );
+    console.log("GSA")
+    }
+    if (item == "silentStudyArea") {
+      this.navCtrl.push(Albums
+    );
+    console.log("SSA")
+    }
   }
 
 }
