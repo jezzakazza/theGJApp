@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>About Us</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color:#fcedff">
+  <ion-list>
+    <p style="text-align: justify; padding-right: 10px; padding-left: 10px; font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif">GJ were founded when two musicians came together to collaborate and innovate. 
+      Since the first legendary song, the musical duo have made many more, venturing out of their
+      musical comfort zones. When distance made making live music difficult, GJ really showed their adaptive abilities
+      and transformed into an electronic powerhouse!</p>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)" style = "background-color: #F1AA7F">
+      <ion-icon [name]="item.icon" item-left></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-right>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
+  <div style="text-align: center">
+  <img src="assets/GJduo.jpg" style="height: 150pt;" />
+  </div>
+</ion-content>

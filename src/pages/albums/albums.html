@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Soundboard</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color:#fcedff">
+<br />
+<div  style="padding-left: 60px; padding-right: 60px" >
+<table>
+  <td>
+    <tr>
+      <button ion-button (click)="playAudio('assets/gj.mp3')">
+        <i class="icon ion-social-angular" style="font-size: 50px"></i>
+         TRADEMARK
+      </button>
+    </tr>
+    <tr>
+      <button ion-button (click)="playAudio('assets/soundboard/getonwiththemusic.mp3')">
+        <i class="icon ion-steam" style="font-size: 50px"></i>
+        GUWTM
+      </button>
+    </tr>
+    <tr>
+      <button ion-button (click)="playAudio('assets/soundboard/DTB.mp3')">
+        <i class="icon ion-xbox" style="font-size: 50px"></i>
+        DTB
+      </button>
+    </tr>
+  </td>
+</table>
+</div>
+</ion-content>

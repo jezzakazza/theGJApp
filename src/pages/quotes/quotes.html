@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Quotes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color:#fcedff">
+<div *ngIf="!areQuotesGenerated"><h3>YOU KNOW U GOTTA HIT DAT BUTTON TO GENERATE DA TING</h3></div>
+<div *ngIf="areQuotesGenerated"><h3>{{quoteArray.quote}}</h3></div>
+<br />
+
+
+  <button ion-button full type="submit" class="btn btn-success" (click)="getQuotes()" >Submit</button>
+
+</ion-content>
